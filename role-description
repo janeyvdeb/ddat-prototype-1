@@ -1,0 +1,856 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta property="og:description" content="Find out more about what a data engineer in the Civil Service is expected to do.">
+<meta property="og:title" content="Data engineer - prototype 1">
+<meta property="og:url" content="https://www.integration.publishing.service.gov.uk/guidance/data-engineer-prototype-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GOV.UK">
+<meta name="twitter:card" content="summary">
+<meta name="description" content="Find out more about what a data engineer in the Civil Service is expected to do.">
+<meta name="govuk:taxon-slugs" content="education,work">
+<meta name="govuk:taxon-slug" content="education">
+<meta name="govuk:taxon-ids" content="c58fdadd-7743-46d6-9629-90bb3ccc4ef0,d0f1e5a3-c8f4-4780-8678-994f19104b21">
+<meta name="govuk:taxon-id" content="c58fdadd-7743-46d6-9629-90bb3ccc4ef0">
+<meta name="govuk:themes" content="education, work">
+<meta name="govuk:publishing-government" content="2015-conservative-government">
+<meta name="govuk:political-status" content="non-political">
+<meta name="govuk:analytics:organisations" content="&lt;OT1056&gt;">
+<meta name="govuk:content-has-history" content="true">
+<meta name="govuk:content-id" content="189dbd84-0642-4389-8530-3a47b58746c5">
+<meta name="govuk:schema-name" content="detailed_guide">
+<meta name="govuk:publishing-application" content="whitehall">
+<meta name="govuk:format" content="detailed_guide">
+<meta name="csrf-token" content="WCgtmLmFEGivj1mLLVszvAJf4AG0bNmzZJJYXuMsvs8NXD6ZypZiq9FKTYutO9LxvVPjBVqesl969vBpGNGL1A==">
+<meta name="csrf-param" content="authenticity_token">
+    <meta charset="utf-8">
+    <title lang="en">
+      Data engineer - prototype 1 - GOV.UK
+  </title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/static/govuk-template-f88b2515ce05ac27445a4889154ded4810d67298edd970fef55db3b7badf7207.css" crossorigin="anonymous" integrity="sha256-+IslFc4FrCdEWkiJFU3tSBDWcpjt2XD+9V2zt7rfcgc=">
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/static/govuk-template-ie6-45653019801261ec1ba95941ae108a54bac0c2665e6782f723f02482dceda82b.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/static/govuk-template-ie7-7e8b2147c67ebda8d9458978ff0426d704bb52ad5582a50fded9fdd9bf2b4e91.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/static/govuk-template-ie8-f9e63bf0305a867d6acf4b07751ad87f573ae3387cdf5a01b86d1f04f1456a3b.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://assets.integration.publishing.service.gov.uk/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" crossorigin="anonymous" integrity="sha256-EHZRlSHC//u/das7DTsy7i2WrH6XePHN+sF3Hu/RocA=">
+
+    <link rel="stylesheet" media="all" href="https://assets.integration.publishing.service.gov.uk/static/fonts-40d92c0fd4588ecfb6aa04c9f6200a28c6ba4be517039122455e36c261188fec.css" crossorigin="anonymous" integrity="sha256-QNksD9RYjs+2qgTJ9iAKKMa6S+UXA5EiRV42wmEYj+w=">
+    <!--[if lt IE 9]><script src="https://assets.integration.publishing.service.gov.uk/static/ie-a4524544a53d57a7e259b4bb966b9c32557c98c920b77e52d09304642b68401a.js" crossorigin="anonymous" integrity="sha256-pFJFRKU9V6fiWbS7lmucMlV8mMkgt35S0JMEZCtoQBo="></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.integration.publishing.service.gov.uk/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://assets.integration.publishing.service.gov.uk/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.integration.publishing.service.gov.uk/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://assets.integration.publishing.service.gov.uk/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.integration.publishing.service.gov.uk/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://assets.integration.publishing.service.gov.uk/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/static/core-layout-cb26a66aeab9ab30880d880b5f6bb1f9310e09819930a730c15975731bb7a30b.css" crossorigin="anonymous" integrity="sha256-yyamauq5qzCIDYgLX2ux+TEOCYGZMKcwwVl1cxu3ows=">
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/static/core-layout-ie6-c85f0f62aa9ca96ae590b5aa72b4eff29ce26da786fdf7b539781a3fb32c6414.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/static/core-layout-ie7-653b62c61dc5631053738d500bcad3c375be6e7279d2231ec23ea83a0d211308.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/static/core-layout-ie8-6077a0cb0e527edb2c89631c60c8fb2f51656c346ce5fdf350b3aec78ba30bce.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://assets.integration.publishing.service.gov.uk/static/core-layout-print-9a2de3ce1590c8ca478a6f7edf5a2e4bad0c6291b1dd4a6e7ca85f653d9591b4.css" crossorigin="anonymous" integrity="sha256-mi3jzhWQyMpHim9+31ouS60MYpGx3UpufKhfZT2VkbQ=">
+
+
+
+    <meta property="og:image" content="https://assets.integration.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/government-frontend/application-fec6f1ca8e39adde255bd9c632e536fbe963f1fdac2ff8cd88cb75bb6391b2e0.css" crossorigin="anonymous" integrity="sha256-/sbxyo45rd4lW9nGMuU2++lj8f2sL/jNiMt1u2ORsuA=">
+<!--<![endif]--><link rel="stylesheet" media="print" href="https://assets.integration.publishing.service.gov.uk/government-frontend/print-899da42545e91dd18bfb8ed981410a6e1143a4faec22932ac19bc86208eb3751.css" crossorigin="anonymous" integrity="sha256-iZ2kJUXpHdGL+47ZgUEKbhFDpPrsIpMqwZvIYgjrN1E=">
+<link rel="canonical" href="https://www.integration.publishing.service.gov.uk/guidance/data-engineer-prototype-1">
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/government-frontend/application-ie6-610b0071a006bcaac16973c2b21d87a77acc33965f92342f0fe106f4cf5a335f.css" /><script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/government-frontend/application-ie7-610b0071a006bcaac16973c2b21d87a77acc33965f92342f0fe106f4cf5a335f.css" /><script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.integration.publishing.service.gov.uk/government-frontend/application-ie8-b5bd3d0e13d4ab0dbc467cc3484e8e87cf85160a0021cf5b1543c4cb77386e1f.css" /><script>var ieVersion = 8;</script><![endif]--><meta name="govuk:rendering-application" content="government-frontend">
+</head>
+
+  <body class="draft">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    
+<div id="global-cookie-message" class="gem-c-cookie-banner" data-module="cookie-banner" role="region" aria-label="cookie banner">
+  <div class="gem-c-cookie-banner__wrapper govuk-width-container">
+    <p class="gem-c-cookie-banner__message">GOV.UK uses cookies to make the site simpler.</p>
+    <div class="gem-c-cookie-banner__buttons">
+      <div class="gem-c-cookie-banner__button gem-c-cookie-banner__button-accept">
+        
+  <button class="gem-c-button govuk-button gem-c-button--secondary gem-c-button--inline" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted">Accept cookies</button>
+
+
+      </div>
+      <div class="gem-c-cookie-banner__button gem-c-cookie-banner__button-settings">
+        
+  <a class="gem-c-button govuk-button gem-c-button--secondary gem-c-button--inline" role="button" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked" href="/help/cookies">Cookie settings</a>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1">
+    <p class="gem-c-cookie-banner__confirmation-message">
+      You’ve accepted all cookies. You can <a class="govuk-link" href="/help/cookies" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.
+    </p>
+    <button class="gem-c-cookie-banner__hide-button" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide</button>
+  </div>
+</div>
+
+
+    <header role="banner" id="global-header" class=" with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.integration.publishing.service.gov.uk" title="Go to the GOV.UK homepage" id="logo" class="content" data-module="track-click" data-track-category="homeLinkClicked" data-track-action="homeHeader">
+              <img src="https://assets.integration.publishing.service.gov.uk/static/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt=""> GOV.UK
+            </a>
+          </div>
+            <a href="#search" class="search-toggle js-header-toggle">Search</a>
+  <form id="search" class="site-search" action="/search" method="get" role="search">
+    <div class="content">
+      <label for="site-search-text">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus">
+      <input class="submit" type="submit" value="Search">
+    </div>
+  </form>
+
+        </div>
+        
+      <div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+  <nav id="proposition-menu" class="no-proposition-name gem-c-government-navigation">
+  <ul id="proposition-links">
+    <li>
+      <a class="" href="/government/organisations">
+        Departments
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/world">
+        Worldwide
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/how-government-works">
+        How government works
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/get-involved">
+        Get involved
+      </a>
+    </li>
+    <li class="clear-child">
+      <a class="" href="/search/policy-papers-and-consultations?content_store_document_type%5B%5D=open_consultations&amp;amp;content_store_document_type%5B%5D=closed_consultations">
+        Consultations
+      </a>
+    </li>
+    <li>
+      <a class="" href="/government/statistics">
+        Statistics
+      </a>
+    </li>
+    <li>
+      <a class="" href="/news-and-communications">
+        News and communications
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+</div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      
+
+  <div id="wrapper" class="direction-ltr">
+    
+
+      
+<div class="gem-c-contextual-breadcrumbs">
+    
+
+
+<div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+  <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/education" data-track-options='{"dimension28":"2","dimension29":"Education, training and skills"}' class="govuk-breadcrumbs__link" aria-current="false" href="/education">Education, training and skills</a>
+      </li>
+  </ol>
+</div>
+
+
+</div>
+
+
+    <main role="main" id="content" class="detailed-guide" lang="en">
+      
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+    <p class="gem-c-title__context">
+      Guidance
+    </p>
+  <h1 class="gem-c-title__text gem-c-title__text--long">
+    Data engineer - prototype 1
+  </h1>
+</div>
+  </div>
+  
+  <div class="govuk-grid-column-two-thirds">
+    
+  <p class="gem-c-lead-paragraph ">
+    Find out more about what a data engineer in the Civil Service is expected to do.
+  </p>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="metadata-logo-wrapper">
+    <div class="govuk-grid-column-two-thirds metadata-column">
+        <div class="app-c-publisher-metadata" lang="en">
+    <div class="app-c-published-dates " lang="en">
+    Published 25 July 2019
+</div>
+
+      <div class="app-c-publisher-metadata__other">
+        <dl data-module="track-click">
+            <dt class="app-c-publisher-metadata__term">
+              From:
+            </dt>
+            <dd class="app-c-publisher-metadata__definition" data-module="gem-toggle">
+                <span class="app-c-publisher-metadata__definition-sentence">
+                  <a href="/government/organisations/government-digital-service">Government Digital Service</a>
+                </span>
+            </dd>
+        </dl>
+      </div>
+  </div>
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+
+      <div id="contents" class="app-c-contents-list-with-body" data-module="sticky-element-container">
+      <div class="responsive-bottom-margin">
+          <nav role="navigation" class="gem-c-contents-list gem-c-contents-list--no-underline " data-module="track-click">
+      <h2 class="gem-c-contents-list__title">Contents</h2>
+
+    <ol class="gem-c-contents-list__list">
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+          <a class="gem-c-contents-list__link " data-track-category="contentsClicked" data-track-action="content_item 1" data-track-label="#what-does-a-data-engineer-do" data-track-options='{"dimension29":"1. What does a data engineer do?"}' href="#what-does-a-data-engineer-do">1. What does a data engineer do?</a>
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+          <a class="gem-c-contents-list__link " data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="#role-levels" data-track-options='{"dimension29":"2. Role levels"}' href="#role-levels">2. Role levels</a>
+        </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+          <a class="gem-c-contents-list__link " data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#what-skills-do-you-need" data-track-options='{"dimension29":"3. What skills do you need?"}' href="#what-skills-do-you-need">3. What skills do you need?</a>
+        </li>
+    </ol>
+  </nav>
+
+      </div>
+    
+      
+<div class="gem-c-govspeak govuk-govspeak direction-ltr" data-module="govspeak">
+      <div class="govspeak">
+<p>A data engineer industrialises the delivery of data products and services into systems and business processes.</p>
+
+<p>This role is part of the <a href="https://www.integration.publishing.service.gov.uk/government/collections/digital-data-and-technology-profession-ddat-capability-framework-prototype-1">Digital, Data and Technology Capability Framework</a>.</p>
+
+<h2 id="what-does-a-data-engineer-do">1. What does a data engineer do?</h2>
+
+<p>As a data engineer, you will:</p>
+
+<ul>
+  <li>design, build, test and maintain data management systems, making sure they meet business requirements and user needs</li>
+  <li>deliver services that are automated, reliable and secure</li>
+  <li>work closely with data architects and data scientists</li>
+  <li>recommend ways to improve data efficiency and reliability</li>
+</ul>
+
+<h3 id="related-content">Related content</h3>
+
+<ul>
+  <li><a rel="external" href="https://dwpdigital.blog.gov.uk/2019/02/04/data-engineering-a-new-starters-perspective/">Data engineering: a new starter’s perspective</a></li>
+  <li><a rel="external" href="https://dwpdigital.blog.gov.uk/2018/02/05/a-day-in-the-life-of-a-digital-data-engineer/">A day in the life of a digital data engineer</a></li>
+  <li><a rel="external" href="https://www.gov.uk/government/groups/gds-academy">GDS Academy training: professional learning for public sector staff</a></li>
+</ul>
+
+<h2 id="role-levels">2. Role levels</h2>
+
+<p>There are 4 levels in this role, ranging from data engineer (entry level) to head of data engineering (most senior role). You will find information on the skills you need for these roles in section 3.</p>
+
+<ul>
+  <li><a rel="external" href="http://www.gov.uk/">Download role descriptions for these job levels</a></li>
+</ul>
+
+<h3 id="data-engineer">2.1 Data engineer</h3>
+
+<p>A data engineer delivers the designs set by more senior members of the data engineering community. As a data engineer, you will:</p>
+
+<ul>
+  <li>implement data flows to connect operational systems, data for analytics and BI systems</li>
+  <li>document source-to-target mappings</li>
+  <li>re-engineer manual data flows to enable scaling and repeatable use</li>
+  <li>support the build of data streaming systems</li>
+  <li>write ETL scripts and code to make sure the ETL process performs optimally</li>
+  <li>develop business intelligence reports that can be re-used</li>
+  <li>build accessible data for analysis</li>
+</ul>
+
+<h3 id="senior-data-engineer">2.2 Senior data engineer</h3>
+
+<p>A senior data engineer designs and leads the implementation of data flows to connect operational systems, data for analytics and BI systems. In this role, you will:</p>
+
+<ul>
+  <li>recognise opportunities to re-use existing data flows</li>
+  <li>lead the build of data streaming systems</li>
+  <li>optimise the code to ensure processes perform optimally</li>
+  <li>lead work on database management</li>
+</ul>
+
+<h3 id="lead-data-engineer">2.3 Lead data engineer</h3>
+
+<p>A lead data engineer is responsible for the design and implementation of numerous complex data flows to connect operational systems, data for analytics and BI systems. In this role, you will:</p>
+
+<ul>
+  <li>recognise and share opportunities to re-use existing data flows between their teams</li>
+  <li>are responsible for the build of data streaming systems</li>
+  <li>coordinate teams and set best practice and standards</li>
+</ul>
+
+<h3 id="head-of-data-engineering">2.4 Head of data engineering</h3>
+
+<p>A head of data engineering leads multi-functional delivery teams to deliver robust data services for their department, other government departments and private sector partners. In this role, you will:</p>
+
+<ul>
+  <li>inspire best practice for data products and services within their teams</li>
+  <li>build the data engineering capability by providing technical leadership and career development for the community</li>
+  <li>work with other senior team members to identify, plan, develop and deliver data services</li>
+</ul>
+
+<h2 id="what-skills-do-you-need">3. What skills do you need?</h2>
+
+<p>For this job, you should be able to demonstrate that you have the skills outlined below. All of the skills are required for all roles, but the skill level will be different from role to role.</p>
+
+<h3 id="communicating-between-the-technical-and-the-non-technical">3.1 Communicating between the technical and the non-technical</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>communicate effectively across organisational, technical and political boundaries, understanding the context</li>
+  <li>make complex and technical information and language simple and accessible for non-technical audiences</li>
+  <li>advocate and communicate what a team does to create trust and authenticity, and respond to challenge</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer: you will be able to: translate technical concepts into non-technical language; discuss what communication is required to internal and external stakeholders.</li>
+  <li>Senior data engineer: you will be able to: effectively translate and accurately communicate across technical and non-technical stakeholders; facilitate discussions within a multidisciplinary team, with potentially difficult dynamics; advocate for the team externally; manage differing perspectives.</li>
+  <li>Lead data engineer: you will be able to: listen to the needs of technical and business stakeholders and interpret between them; manage stakeholders’ expectations and be flexible; communicate both proactively and reactively; facilitate difficult discussions within the team or with diverse senior stakeholders.</li>
+  <li>Head of data engineering: you will be able to: communicate effectively across organisational, technical and political boundaries, understanding the context; make complex and technical information and language simple and accessible for non-technical audiences; be able to advocate and communicate what a team does to create trust and authenticity; respond to challenge.</li>
+</ul>
+
+<h3 id="data-analysis-and-synthesis">3.2 Data analysis and synthesis</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>translate data into valuable insights that inform decisions.</li>
+  <li>involve teams in analytics and synthesis to increase consensus and challenge assumptions</li>
+  <li>identify and utilise the most appropriate analytical techniques</li>
+  <li>have an understanding of analytical tools and be numerate</li>
+  <li>be aware of and keep up to date with advances in digital analytics tools and data manipulation products</li>
+  <li>collect, collate, cleanse, synthesise and interpret data to derive meaningful and actionable insights.</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer / Senior data engineer: you will undertake data profiling and source system analysis and present clear insights to colleagues to support the end use of the data.</li>
+  <li>Lead data engineer / Head of data engineering: you will: understand and help teams apply a range of techniques for data profiling; source system analysis from a complex single source; bring multiple data sources together in a conformed model for analysis.</li>
+</ul>
+
+<h3 id="data-development-process">3.3 Data development process</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>integrate and separate data feeds in order to map, produce, transform and test new data products</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer / Senior data engineer: you will need to: design, build and test data products based on feeds from multiple systems using a range of different storage technologies and/or access methods; create repeatable and reusable products.</li>
+  <li>Lead data engineer: you will need to: design, build and test data products that are complex or large-scale; build teams to complete data integration services.</li>
+  <li>Head of data engineering: you will need to: establish enterprise-scale data integration procedures across the data development lifecycle and ensure that teams adhere to these; manage resources to ensure that data services work effectively at an enterprise level.</li>
+</ul>
+
+<h3 id="data-integration-design">3.4 Data integration design</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>develop fit-for-purpose, resilient, scalable and future-proof data services to meet user needs</li>
+  <li>have a demonstrable understanding of how to expose data from systems (for example, through APIs), link data from multiple systems and deliver streaming services</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer: you will need to: develop fit-for-purpose, resilient, scalable and future-proof data services to meet user needs; know how to expose data from systems (for example, through APIs), link data from multiple systems and deliver streaming services.</li>
+  <li>Senior data engineer: you will need to: deliver data solutions in accordance with agreed organisational standards that ensure services are resilient, scalable and future-proof.</li>
+  <li>Lead data engineer / Head of data engineering: you will need to: establish standards; keep abreast of best practice in industry and across government; keep those standards up to date and ensure adherence to them.</li>
+</ul>
+
+<h3 id="data-modelling">3.5 Data modelling</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>produce data models and understand where to use different types of data models</li>
+  <li>understand different tools and be able to compare between different data models</li>
+  <li>reverse engineer a data model from a live system</li>
+  <li>understand industry-recognised data modelling patterns and standards</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer: you will be able to: communicate effectively across organisational, technical and political boundaries, understanding the context; make complex and technical information and language simple and accessible for non-technical audiences; advocate and communicate what a team does to create trust and authenticity, and can respond to challenge.</li>
+  <li>Senior data engineer: you will be able to: explain the concepts and principles of data modelling; produce, maintain and update relevant data models for specific business needs; reverse-engineer data models from a live system.</li>
+  <li>Lead data engineer: you will be able to: explain the concepts and principles of data modelling; produce relevant data models across multiple subject areas; reverse-engineer data models from a live system; understand industry-recognised data modelling patterns and standards and when to apply them; compare and align different data models.</li>
+  <li>Head of data engineering: you will be able to: understand the concepts and principles of data modelling; produce relevant data models; work across government and into industry, understanding opportunities for re-use and alignment between the data models in different organisations; design how data models should be categorised within the organisation.</li>
+</ul>
+
+<h3 id="programming-and-build-data-engineering">3.6 Programming and build (data engineering)</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>design, write and iterate code from prototype to production-ready</li>
+  <li>understand security, accessibility and version control</li>
+  <li>use a range of coding tools and languages</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer: you will be able to: design, code, test, correct and document simple programs or scripts under the direction of others.</li>
+  <li>Senior data engineer / Lead data engineer: you will be able to: use and apply agreed standards and tools to design, code, test, correct and document moderate to complex programs and scripts from agreed specifications and subsequent iterations; collaborate with others to review specifications where appropriate.</li>
+  <li>Head of data engineering: you will be able to: set local or team-based standards for programming tools and techniques; select appropriate development methods; advise on the application of standards and methods and ensure compliance; take technical responsibility for all stages and/or iterations in a software development project, providing method-specific technical advice and guidance to project stakeholders.</li>
+</ul>
+
+<h3 id="technical-understanding-data-engineering">3.7 Technical understanding (data engineering)</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>talk about specific technologies that underpin an individual’s ability to deliver the responsibilities and tasks of their role</li>
+  <li>apply the required breadth and depth of technical knowledge</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer / Senior data engineer: you will be able to: discuss core technical concepts related to your role; apply them with guidance.</li>
+  <li>Lead data engineer: you will be able to: demonstrate a deep understanding of the technical concepts required in your role; explain how these fit into the wider technical landscape.</li>
+  <li>Head of data engineering: you will be able to: discuss and advise on future technology changes that present opportunities for the product or programme.</li>
+</ul>
+
+<p>###</p>
+
+<h3 id="testing">3.8 Testing</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>plan, design, manage, execute and report tests, using appropriate tools and techniques</li>
+  <li>work within regulations</li>
+  <li>ensure risks associated with deployment are adequately understood and documented</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer / Senior data engineer: you will be able to: correctly execute test scripts under supervision; explain the role of testing and how it works.</li>
+  <li>Lead data engineer/Head of data engineering: you will be able to: review requirements, specifications and define test conditions; identify issues and risks associated with work; analyse and report test activities and results.</li>
+</ul>
+
+<h3 id="data-innovation">3.9 Data Innovation</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>recognise and exploit business opportunities to ensure more efficient and effective performance of organisations</li>
+  <li>explore new ways of conducting business and organisational processes</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer / Senior data engineer: you will be able to identify opportunities for innovation with new tools and uses of data</li>
+  <li>Lead data engineer: you will be able to: identify areas of innovation in data tools and techniques; recognise appropriate timing for adoption.</li>
+  <li>Head of data engineering: you will be able to: investigate emerging trends in data-related approaches; perform horizon-scanning for the organisation; introduce innovative ways of working.</li>
+</ul>
+
+<h3 id="metadata-management">3.10 Metadata management</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>discuss a variety of metadata management tools</li>
+  <li>design and maintain the appropriate metadata repositories to enable the organisation to understand their data assets</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer: you will be able to: work with metadata repositories to complete complex tasks such as data and systems integration impact analysis; maintain a repository to ensure information remains accurate and up to date.</li>
+  <li>Senior data engineer: you will be able to: design an appropriate metadata repository and present changes to existing metadata repositories; discuss a range of tools for storing and working with metadata; provide oversight and advice to more inexperienced members of the team.</li>
+  <li>Lead data engineer: you will be able to: decide on an appropriate metadata repository and present changes to existing metadata repositories; identify a range of tools for storing and working with metadata; provide oversight and advice to more inexperienced members of the team.</li>
+  <li>Head of data engineering: you will be able to: explain how metadata repositories can support different areas of the business; promote and communicate the value of metadata repositories; set up robust governance processes for keeping the repositories up to date.</li>
+</ul>
+
+<h3 id="problem-resolution-data">3.11 Problem resolution (data)</h3>
+
+<p>You should be able to:</p>
+
+<ul>
+  <li>log, analyse and manage problems in order to identify and implement the appropriate solution</li>
+  <li>ensure that the problem is fixed</li>
+</ul>
+
+<p>You also need level-specific skills:</p>
+
+<ul>
+  <li>Data engineer / Senior data engineer: you need to be able to: discuss the types of problems in databases, data processes, data products and services.</li>
+  <li>Lead data engineer: you need to: ensure that the most appropriate actions are taken to resolve problems as they occur; coordinate teams to resolve problems; implement solutions and preventative measures.</li>
+  <li>Head of data engineering: you need to: anticipate problems and know how to prevent them; explain how the problem fits into the larger picture; articulate the problem and help others to articulate the problem; build problem-solving capabilities in others.</li>
+</ul>
+
+</div>
+</div>
+
+
+      <div class="responsive-bottom-margin">
+        <div class="app-c-published-dates " lang="en">
+    Published 25 July 2019
+</div>
+
+      </div>
+
+      <div data-sticky-element class="app-c-contents-list-with-body__link-wrapper">
+        <div class="app-c-contents-list-with-body__link-container">
+          <a class="app-c-back-to-top dont-print" href="#contents">
+    <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewbox="0 0 13 17">
+      <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+    </svg>
+    Contents
+</a>
+
+        </div>
+      </div>
+  </div>
+  </div>
+  
+<div class="govuk-grid-column-one-third">
+  
+<div class="gem-c-contextual-sidebar">
+
+    
+
+
+</div>
+
+</div>
+
+</div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        
+  <div class="gem-c-contextual-footer">
+    
+  <div class="gem-c-related-navigation">
+
+
+
+
+
+      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-topics-391a8a9d" data-module="gem-toggle">
+
+    <h2 id="related-nav-topics-391a8a9d" class="gem-c-related-navigation__sub-heading gem-c-related-navigation__sub-heading--footer" data-track-count="footerRelatedItemSection">Explore the topic</h2>
+
+  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--footer" data-track-category="relatedLinkClicked" data-track-action="1.1 Explore the topic" data-track-label="/education" data-track-options='{"dimension28":"2","dimension29":"Education, training and skills"}' href="/education">Education, training and skills</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--footer" data-track-category="relatedLinkClicked" data-track-action="1.2 Explore the topic" data-track-label="/work" data-track-options='{"dimension28":"2","dimension29":"Work"}' href="/work">Work</a></li>
+
+  </ul>
+</nav>
+
+  </div>
+
+  </div>
+
+
+    </div>
+  </div>
+
+
+    </main>
+    
+<div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+  
+<div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+  <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+    <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+
+    <a class="gem-c-feedback__prompt-link" data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" role="button" style="display: none;" hidden="hidden" aria-hidden="true" href="/contact/govuk">
+      Maybe
+</a>
+    <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--useful js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" aria-expanded="false" role="button" href="/contact/govuk">
+      Yes <span class="visually-hidden">this page is useful</span>
+</a>
+    <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+      No <span class="visually-hidden">this page is not useful</span>
+</a>
+    <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--wrong js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+      Is there anything wrong with this page?
+</a>  </div>
+
+  <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+    Thank you for your feedback
+  </div>
+</div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post">
+  <a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+  <div class="gem-c-feedback__grid-row gem-c-feedback__survey-container">
+    <div class="gem-c-feedback__column-two-thirds">
+      <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+      <input type="hidden" name="url" value="https://draft-origin.integration.publishing.service.gov.uk/guidance/data-engineer-prototype-1">
+
+      <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+      <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+      
+<div class="govuk-form-group">
+    
+<label for="input-ea641d1a" class="gem-c-label govuk-label">
+  What were you doing?
+</label>
+
+
+
+
+  <input name="what_doing" class="gem-c-input govuk-input" id="input-ea641d1a" type="text" aria-describedby="feedback_explanation">
+</div>
+
+      
+<div class="govuk-form-group">
+    
+<label for="input-70b6665a" class="gem-c-label govuk-label">
+  What went wrong?
+</label>
+
+
+
+
+  <input name="what_wrong" class="gem-c-input govuk-input" id="input-70b6665a" type="text">
+</div>
+
+      
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+    </div>
+  </div>
+</form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post">
+  <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+  <div class="gem-c-feedback__grid-row gem-c-feedback__survey-container">
+    <div class="gem-c-feedback__column-two-thirds" id="survey-wrapper">
+      <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+      <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+      <input name="email_survey_signup[survey_source]" type="hidden" value="/guidance/data-engineer-prototype-1">
+
+      <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+      <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+      
+<div class="govuk-form-group">
+    
+<label for="input-2d29015a" class="gem-c-label govuk-label">
+  Email address
+</label>
+
+
+
+
+  <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-2d29015a" type="email" autocomplete="email" aria-describedby="survey_explanation">
+</div>
+
+      
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+    </div>
+  </div>
+</form>
+
+</div>
+
+  </div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+            <div class="footer-categories" data-module="track-click">
+      <div class="footer-explore">
+        <h2>Prepare for Brexit</h2>
+
+        <ul>
+          <li><a data-track-category="footerClicked" data-track-action="brexitLinks" data-track-label="Prepare your business or organisation for the UK leaving the EU" href="/business-uk-leaving-eu">Prepare your business or organisation for Brexit</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="brexitLinks" data-track-label="Prepare for EU Exit if you live in the UK" href="/prepare-eu-exit">Prepare for Brexit if you live in the UK</a></li>
+        </ul>
+        <ul>
+          <li><a data-track-category="footerClicked" data-track-action="brexitLinks" data-track-label="Living in Europe after the UK leaves the EU" href="/uk-nationals-living-eu">Living in Europe after Brexit</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="brexitLinks" data-track-label="Continue to live in the UK after it leaves the EU" href="/staying-uk-eu-citizen">Continue to live in the UK after Brexit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-categories" data-module="track-click">
+      <div class="footer-explore">
+        <h2>Services and information</h2>
+
+        <ul>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Benefits" href="/browse/benefits">Benefits</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Births, deaths, marriages and care" href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Business and self-employed" href="/browse/business">Business and self-employed</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="" href="/browse/childcare-parenting">Childcare and parenting</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Citizenship and living in the UK" href="/browse/citizenship">Citizenship and living in the UK</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Crime, justice and the law" href="/browse/justice">Crime, justice and the law</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Disabled people" href="/browse/disabilities">Disabled people</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Driving and transport" href="/browse/driving">Driving and transport</a></li>
+        </ul>
+        <ul>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Education and learning" href="/browse/education">Education and learning</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Employing people" href="/browse/employing-people">Employing people</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Environment and countryside" href="/browse/environment-countryside">Environment and countryside</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Housing and local services" href="/browse/housing-local-services">Housing and local services</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Money and tax" href="/browse/tax">Money and tax</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Passports, travel and living abroad" href="/browse/abroad">Passports, travel and living abroad</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Visas and immigration" href="/browse/visas-immigration">Visas and immigration</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Working, jobs and pensions" href="/browse/working">Working, jobs and pensions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-inside-government">
+        <h2>Departments and policy</h2>
+
+        <ul>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="How government works" href="/government/how-government-works">How government works</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Departments" href="/government/organisations">Departments</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Worldwide" href="/world">Worldwide</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Services" href="/search/services">Services</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Guidance and regulation" href="/search/guidance-and-regulation">Guidance and regulation</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="News and communications" href="/search/news-and-communications">News and communications</a></li>
+          <!--li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Research and statistics</" href="/search/statistics">Research and statistics</a></li-->
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Policy papers and consultations" href="/search/policy-papers-and-consultations">Policy papers and consultations</a></li>
+          <li><a data-track-category="footerClicked" data-track-action="footerLinks" data-track-label="Transparency and freedom of information releases" href="/search/transparency-and-freedom-of-information-releases">Transparency and freedom of information releases</a></li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/help/cookies">Cookies</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help/accessibility">Accessibility</a></li>
+  <li><a href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+      <script src="https://assets.integration.publishing.service.gov.uk/static/libs/jquery/jquery-1.12.4-c731c20e2995c576b0509d3bd776f7ab64a66b95363a3b5fae9864299ee594ed.js" crossorigin="anonymous" integrity="sha256-xzHCDimVxXawUJ0713b3q2Sma5U2OjtfrphkKZ7llO0="></script>
+<script src="https://assets.integration.publishing.service.gov.uk/static/header-footer-only-813d77a4fa1ae1d25c894a14a92f474ef47cd3423dd27f5c05f3fa95e62f3c24.js" crossorigin="anonymous" integrity="sha256-gT13pPoa4dJciUoUqS9HTvR800I90n9cBfP6leYvPCQ="></script>
+<script src="https://assets.integration.publishing.service.gov.uk/static/surveys-61e9061a16a39f1d56569e259152b609c81570e1e642c96515370852250364bb.js" crossorigin="anonymous" integrity="sha256-YekGGhajnx1WVp4lkVK2CcgVcOHmQsllFTcIUiUDZLs="></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="https://assets.integration.publishing.service.gov.uk/government-frontend/application-021a890d25a68d4443a1e9324776b8a6b582f15d2d66ad48d2852d2b8ab0b813.js" crossorigin="anonymous" integrity="sha256-AhqJDSWmjURDoekyR3a4prWC8V0tZq1I0oUtK4qwuBM="></script><script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.integration.publishing.service.gov.uk/guidance/data-engineer-prototype-1"},"headline":"Data engineer - prototype 1","datePublished":"2019-07-25T14:07:00.000+00:00","dateModified":"2019-07-25T14:07:00.000+00:00","description":"Find out more about what a data engineer in the Civil Service is expected to do.","publisher":{"@type":"Organization","name":"GOV.UK","url":"https://www.gov.uk","logo":{"@type":"ImageObject","url":"https://assets.integration.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-logo-e5962881254c9adb48f94d2f627d3bb67f258a6cbccc969e80abb7bbe4622976.png"}},"image":["https://assets.integration.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-schema-placeholder-1x1-5ceffac04f7f6d4f421bd1d36dbb723ef48c15426d7f77f90be80a83af3c747e.png","https://assets.integration.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-schema-placeholder-4x3-fcfe16abb1a015848e50d2ea797666a9eaf5158dca38ddfb1e52dc8c0543ab74.png","https://assets.integration.publishing.service.gov.uk/government-frontend/govuk_publishing_components/govuk-schema-placeholder-16x9-fcf616879a7b37970df4d2117de962e08f7d057674ef1af6063dcdd529424eee.png"],"author":{"@type":"Organization","name":"Government Digital Service","url":"https://www.integration.publishing.service.gov.uk/government/organisations/government-digital-service"},"about":[{"@context":"http://schema.org","@type":"Thing","sameAs":"https://www.integration.publishing.service.gov.uk/education"},{"@context":"http://schema.org","@type":"Thing","sameAs":"https://www.integration.publishing.service.gov.uk/work"}],"articleBody":"\u003cdiv class=\"govspeak\"\u003e\u003cp\u003eA data engineer industrialises the delivery of data products and services into systems and business processes.\u003c/p\u003e\n\n\u003cp\u003eThis role is part of the \u003ca href=\"https://www.integration.publishing.service.gov.uk/government/collections/digital-data-and-technology-profession-ddat-capability-framework-prototype-1\"\u003eDigital, Data and Technology Capability Framework\u003c/a\u003e.\u003c/p\u003e\n\n\u003ch2 id=\"what-does-a-data-engineer-do\"\u003e1. What does a data engineer do?\u003c/h2\u003e\n\n\u003cp\u003eAs a data engineer, you will:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003edesign, build, test and maintain data management systems, making sure they meet business requirements and user needs\u003c/li\u003e\n  \u003cli\u003edeliver services that are automated, reliable and secure\u003c/li\u003e\n  \u003cli\u003ework closely with data architects and data scientists\u003c/li\u003e\n  \u003cli\u003erecommend ways to improve data efficiency and reliability\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"related-content\"\u003eRelated content\u003c/h3\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca rel=\"external\" href=\"https://dwpdigital.blog.gov.uk/2019/02/04/data-engineering-a-new-starters-perspective/\"\u003eData engineering: a new starter’s perspective\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca rel=\"external\" href=\"https://dwpdigital.blog.gov.uk/2018/02/05/a-day-in-the-life-of-a-digital-data-engineer/\"\u003eA day in the life of a digital data engineer\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca rel=\"external\" href=\"https://www.gov.uk/government/groups/gds-academy\"\u003eGDS Academy training: professional learning for public sector staff\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2 id=\"role-levels\"\u003e2. Role levels\u003c/h2\u003e\n\n\u003cp\u003eThere are 4 levels in this role, ranging from data engineer (entry level) to head of data engineering (most senior role). You will find information on the skills you need for these roles in section 3.\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca rel=\"external\" href=\"http://www.gov.uk/\"\u003eDownload role descriptions for these job levels\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"data-engineer\"\u003e2.1 Data engineer\u003c/h3\u003e\n\n\u003cp\u003eA data engineer delivers the designs set by more senior members of the data engineering community. As a data engineer, you will:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eimplement data flows to connect operational systems, data for analytics and BI systems\u003c/li\u003e\n  \u003cli\u003edocument source-to-target mappings\u003c/li\u003e\n  \u003cli\u003ere-engineer manual data flows to enable scaling and repeatable use\u003c/li\u003e\n  \u003cli\u003esupport the build of data streaming systems\u003c/li\u003e\n  \u003cli\u003ewrite ETL scripts and code to make sure the ETL process performs optimally\u003c/li\u003e\n  \u003cli\u003edevelop business intelligence reports that can be re-used\u003c/li\u003e\n  \u003cli\u003ebuild accessible data for analysis\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"senior-data-engineer\"\u003e2.2 Senior data engineer\u003c/h3\u003e\n\n\u003cp\u003eA senior data engineer designs and leads the implementation of data flows to connect operational systems, data for analytics and BI systems. In this role, you will:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003erecognise opportunities to re-use existing data flows\u003c/li\u003e\n  \u003cli\u003elead the build of data streaming systems\u003c/li\u003e\n  \u003cli\u003eoptimise the code to ensure processes perform optimally\u003c/li\u003e\n  \u003cli\u003elead work on database management\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"lead-data-engineer\"\u003e2.3 Lead data engineer\u003c/h3\u003e\n\n\u003cp\u003eA lead data engineer is responsible for the design and implementation of numerous complex data flows to connect operational systems, data for analytics and BI systems. In this role, you will:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003erecognise and share opportunities to re-use existing data flows between their teams\u003c/li\u003e\n  \u003cli\u003eare responsible for the build of data streaming systems\u003c/li\u003e\n  \u003cli\u003ecoordinate teams and set best practice and standards\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"head-of-data-engineering\"\u003e2.4 Head of data engineering\u003c/h3\u003e\n\n\u003cp\u003eA head of data engineering leads multi-functional delivery teams to deliver robust data services for their department, other government departments and private sector partners. In this role, you will:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003einspire best practice for data products and services within their teams\u003c/li\u003e\n  \u003cli\u003ebuild the data engineering capability by providing technical leadership and career development for the community\u003c/li\u003e\n  \u003cli\u003ework with other senior team members to identify, plan, develop and deliver data services\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2 id=\"what-skills-do-you-need\"\u003e3. What skills do you need?\u003c/h2\u003e\n\n\u003cp\u003eFor this job, you should be able to demonstrate that you have the skills outlined below. All of the skills are required for all roles, but the skill level will be different from role to role.\u003c/p\u003e\n\n\u003ch3 id=\"communicating-between-the-technical-and-the-non-technical\"\u003e3.1 Communicating between the technical and the non-technical\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003ecommunicate effectively across organisational, technical and political boundaries, understanding the context\u003c/li\u003e\n  \u003cli\u003emake complex and technical information and language simple and accessible for non-technical audiences\u003c/li\u003e\n  \u003cli\u003eadvocate and communicate what a team does to create trust and authenticity, and respond to challenge\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer: you will be able to: translate technical concepts into non-technical language; discuss what communication is required to internal and external stakeholders.\u003c/li\u003e\n  \u003cli\u003eSenior data engineer: you will be able to: effectively translate and accurately communicate across technical and non-technical stakeholders; facilitate discussions within a multidisciplinary team, with potentially difficult dynamics; advocate for the team externally; manage differing perspectives.\u003c/li\u003e\n  \u003cli\u003eLead data engineer: you will be able to: listen to the needs of technical and business stakeholders and interpret between them; manage stakeholders’ expectations and be flexible; communicate both proactively and reactively; facilitate difficult discussions within the team or with diverse senior stakeholders.\u003c/li\u003e\n  \u003cli\u003eHead of data engineering: you will be able to: communicate effectively across organisational, technical and political boundaries, understanding the context; make complex and technical information and language simple and accessible for non-technical audiences; be able to advocate and communicate what a team does to create trust and authenticity; respond to challenge.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"data-analysis-and-synthesis\"\u003e3.2 Data analysis and synthesis\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003etranslate data into valuable insights that inform decisions.\u003c/li\u003e\n  \u003cli\u003einvolve teams in analytics and synthesis to increase consensus and challenge assumptions\u003c/li\u003e\n  \u003cli\u003eidentify and utilise the most appropriate analytical techniques\u003c/li\u003e\n  \u003cli\u003ehave an understanding of analytical tools and be numerate\u003c/li\u003e\n  \u003cli\u003ebe aware of and keep up to date with advances in digital analytics tools and data manipulation products\u003c/li\u003e\n  \u003cli\u003ecollect, collate, cleanse, synthesise and interpret data to derive meaningful and actionable insights.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer / Senior data engineer: you will undertake data profiling and source system analysis and present clear insights to colleagues to support the end use of the data.\u003c/li\u003e\n  \u003cli\u003eLead data engineer / Head of data engineering: you will: understand and help teams apply a range of techniques for data profiling; source system analysis from a complex single source; bring multiple data sources together in a conformed model for analysis.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"data-development-process\"\u003e3.3 Data development process\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eintegrate and separate data feeds in order to map, produce, transform and test new data products\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer / Senior data engineer: you will need to: design, build and test data products based on feeds from multiple systems using a range of different storage technologies and/or access methods; create repeatable and reusable products.\u003c/li\u003e\n  \u003cli\u003eLead data engineer: you will need to: design, build and test data products that are complex or large-scale; build teams to complete data integration services.\u003c/li\u003e\n  \u003cli\u003eHead of data engineering: you will need to: establish enterprise-scale data integration procedures across the data development lifecycle and ensure that teams adhere to these; manage resources to ensure that data services work effectively at an enterprise level.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"data-integration-design\"\u003e3.4 Data integration design\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003edevelop fit-for-purpose, resilient, scalable and future-proof data services to meet user needs\u003c/li\u003e\n  \u003cli\u003ehave a demonstrable understanding of how to expose data from systems (for example, through APIs), link data from multiple systems and deliver streaming services\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer: you will need to: develop fit-for-purpose, resilient, scalable and future-proof data services to meet user needs; know how to expose data from systems (for example, through APIs), link data from multiple systems and deliver streaming services.\u003c/li\u003e\n  \u003cli\u003eSenior data engineer: you will need to: deliver data solutions in accordance with agreed organisational standards that ensure services are resilient, scalable and future-proof.\u003c/li\u003e\n  \u003cli\u003eLead data engineer / Head of data engineering: you will need to: establish standards; keep abreast of best practice in industry and across government; keep those standards up to date and ensure adherence to them.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"data-modelling\"\u003e3.5 Data modelling\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eproduce data models and understand where to use different types of data models\u003c/li\u003e\n  \u003cli\u003eunderstand different tools and be able to compare between different data models\u003c/li\u003e\n  \u003cli\u003ereverse engineer a data model from a live system\u003c/li\u003e\n  \u003cli\u003eunderstand industry-recognised data modelling patterns and standards\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer: you will be able to: communicate effectively across organisational, technical and political boundaries, understanding the context; make complex and technical information and language simple and accessible for non-technical audiences; advocate and communicate what a team does to create trust and authenticity, and can respond to challenge.\u003c/li\u003e\n  \u003cli\u003eSenior data engineer: you will be able to: explain the concepts and principles of data modelling; produce, maintain and update relevant data models for specific business needs; reverse-engineer data models from a live system.\u003c/li\u003e\n  \u003cli\u003eLead data engineer: you will be able to: explain the concepts and principles of data modelling; produce relevant data models across multiple subject areas; reverse-engineer data models from a live system; understand industry-recognised data modelling patterns and standards and when to apply them; compare and align different data models.\u003c/li\u003e\n  \u003cli\u003eHead of data engineering: you will be able to: understand the concepts and principles of data modelling; produce relevant data models; work across government and into industry, understanding opportunities for re-use and alignment between the data models in different organisations; design how data models should be categorised within the organisation.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"programming-and-build-data-engineering\"\u003e3.6 Programming and build (data engineering)\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003edesign, write and iterate code from prototype to production-ready\u003c/li\u003e\n  \u003cli\u003eunderstand security, accessibility and version control\u003c/li\u003e\n  \u003cli\u003euse a range of coding tools and languages\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer: you will be able to: design, code, test, correct and document simple programs or scripts under the direction of others.\u003c/li\u003e\n  \u003cli\u003eSenior data engineer / Lead data engineer: you will be able to: use and apply agreed standards and tools to design, code, test, correct and document moderate to complex programs and scripts from agreed specifications and subsequent iterations; collaborate with others to review specifications where appropriate.\u003c/li\u003e\n  \u003cli\u003eHead of data engineering: you will be able to: set local or team-based standards for programming tools and techniques; select appropriate development methods; advise on the application of standards and methods and ensure compliance; take technical responsibility for all stages and/or iterations in a software development project, providing method-specific technical advice and guidance to project stakeholders.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"technical-understanding-data-engineering\"\u003e3.7 Technical understanding (data engineering)\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003etalk about specific technologies that underpin an individual’s ability to deliver the responsibilities and tasks of their role\u003c/li\u003e\n  \u003cli\u003eapply the required breadth and depth of technical knowledge\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer / Senior data engineer: you will be able to: discuss core technical concepts related to your role; apply them with guidance.\u003c/li\u003e\n  \u003cli\u003eLead data engineer: you will be able to: demonstrate a deep understanding of the technical concepts required in your role; explain how these fit into the wider technical landscape.\u003c/li\u003e\n  \u003cli\u003eHead of data engineering: you will be able to: discuss and advise on future technology changes that present opportunities for the product or programme.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003e###\u003c/p\u003e\n\n\u003ch3 id=\"testing\"\u003e3.8 Testing\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eplan, design, manage, execute and report tests, using appropriate tools and techniques\u003c/li\u003e\n  \u003cli\u003ework within regulations\u003c/li\u003e\n  \u003cli\u003eensure risks associated with deployment are adequately understood and documented\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer / Senior data engineer: you will be able to: correctly execute test scripts under supervision; explain the role of testing and how it works.\u003c/li\u003e\n  \u003cli\u003eLead data engineer/Head of data engineering: you will be able to: review requirements, specifications and define test conditions; identify issues and risks associated with work; analyse and report test activities and results.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"data-innovation\"\u003e3.9 Data Innovation\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003erecognise and exploit business opportunities to ensure more efficient and effective performance of organisations\u003c/li\u003e\n  \u003cli\u003eexplore new ways of conducting business and organisational processes\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer / Senior data engineer: you will be able to identify opportunities for innovation with new tools and uses of data\u003c/li\u003e\n  \u003cli\u003eLead data engineer: you will be able to: identify areas of innovation in data tools and techniques; recognise appropriate timing for adoption.\u003c/li\u003e\n  \u003cli\u003eHead of data engineering: you will be able to: investigate emerging trends in data-related approaches; perform horizon-scanning for the organisation; introduce innovative ways of working.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"metadata-management\"\u003e3.10 Metadata management\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003ediscuss a variety of metadata management tools\u003c/li\u003e\n  \u003cli\u003edesign and maintain the appropriate metadata repositories to enable the organisation to understand their data assets\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer: you will be able to: work with metadata repositories to complete complex tasks such as data and systems integration impact analysis; maintain a repository to ensure information remains accurate and up to date.\u003c/li\u003e\n  \u003cli\u003eSenior data engineer: you will be able to: design an appropriate metadata repository and present changes to existing metadata repositories; discuss a range of tools for storing and working with metadata; provide oversight and advice to more inexperienced members of the team.\u003c/li\u003e\n  \u003cli\u003eLead data engineer: you will be able to: decide on an appropriate metadata repository and present changes to existing metadata repositories; identify a range of tools for storing and working with metadata; provide oversight and advice to more inexperienced members of the team.\u003c/li\u003e\n  \u003cli\u003eHead of data engineering: you will be able to: explain how metadata repositories can support different areas of the business; promote and communicate the value of metadata repositories; set up robust governance processes for keeping the repositories up to date.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"problem-resolution-data\"\u003e3.11 Problem resolution (data)\u003c/h3\u003e\n\n\u003cp\u003eYou should be able to:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003elog, analyse and manage problems in order to identify and implement the appropriate solution\u003c/li\u003e\n  \u003cli\u003eensure that the problem is fixed\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eYou also need level-specific skills:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eData engineer / Senior data engineer: you need to be able to: discuss the types of problems in databases, data processes, data products and services.\u003c/li\u003e\n  \u003cli\u003eLead data engineer: you need to: ensure that the most appropriate actions are taken to resolve problems as they occur; coordinate teams to resolve problems; implement solutions and preventative measures.\u003c/li\u003e\n  \u003cli\u003eHead of data engineering: you need to: anticipate problems and know how to prevent them; explain how the problem fits into the larger picture; articulate the problem and help others to articulate the problem; build problem-solving capabilities in others.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003c/div\u003e"}
+</script><script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https://www.integration.publishing.service.gov.uk/"}},{"@type":"ListItem","position":2,"item":{"name":"Education, training and skills","@id":"https://www.integration.publishing.service.gov.uk/education"}}]}
+</script>
+</body>
+</html>
